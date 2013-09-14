@@ -49,13 +49,19 @@ function set_lanlog(index, latitude, longitude) {
 	var latlng = new google.maps.LatLng(latitude, longitude);
 
  	var myOptions = {
-    	zoom: 12,
+    	zoom: 16,
     	center: latlng,
     	mapTypeId: google.maps.MapTypeId.ROADMAP,
 		scaleControl: true
  	};
 
 	var map = new google.maps.Map(mapdiv, myOptions);
+	
+	//var latlng = new google.maps.LatLng(35.539001,134.228468);
+	var marker = new google.maps.Marker({
+	  positon: latlng,
+	  map: map
+	});
 	
 	
 	/*配列の数だけ、押しピンマーカーを追加する。*/	
