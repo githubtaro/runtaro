@@ -39,7 +39,7 @@ function on_refresh_click() {
 //　　　longitude:経度
 function set_lanlog(index, latitude, longitude) {
 
-	var mapdiv = document.getElementById("map_canvas"+i);
+	var mapdiv = document.getElementById("map_canvas"+index);
 	
 	/*中央は、配列0の緯度経度でよいでしょう*/
 	//var latitude_input = document.getElementById("latitude");
