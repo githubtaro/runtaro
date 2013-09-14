@@ -58,11 +58,15 @@ function set_lanlog(index, latitude, longitude) {
 	var map = new google.maps.Map(mapdiv, myOptions);
 	
 	var latlng2 = new google.maps.LatLng(latitude, longitude);
-	var marker = new google.maps.Marker({
-	  positon: latlng2,
-	  map: map
-	});
-	
+	//var marker = new google.maps.Marker({
+	//  positon: latlng2,
+	//  map: map
+	//});
+	var mopts = {
+  			positon: latlng2,
+		};
+	var marker = new google.maps.Marker(mopts);
+	marker.setMap(map);
 	
 	
 	/*配列の数だけ、押しピンマーカーを追加する。*/	
