@@ -23,11 +23,12 @@ $(function(){
 						+'<td>'+rest.name+'</td>'
 						+'<td><img width="100px" src="'+rest.image_url.shop_image1+'"/></td>'
 						+'<td><img width="100px" src="'+rest.image_url.shop_image2+'"/></td>'
-						+'<td>'+rest.latitude+','+rest.longitude+'"/></td>'
-						+ '<td><div id="map_canvas'+i+' "style=width : 100px; height : 100px;"></div></td>'
+						//+'<td>'+rest.latitude+','+rest.longitude+'</td>'
+						+ '<td><div id="map_canvas'+idx+'" style="width : 240px; height : 160px;"></div></td>'
 						+'</tr>\n'
 					);
 					
+
 					set_lanlog(idx, ido, keido);
 					idx++;
 				});

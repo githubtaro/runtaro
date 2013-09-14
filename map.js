@@ -78,11 +78,13 @@ function set_lanlog(index, latitude, longitude) {
 	//}
 }
 
+/*
 google.maps.event.addDomListener(
     window,
 	'load',
 	set_lanlog
 );
+*/
 
 /*
 function attachMessage(marker, msg) {//押しピン表示用
