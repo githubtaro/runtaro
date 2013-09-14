@@ -23,7 +23,8 @@ $(function(){
 						+'<td>'+rest.name+'</td>'
 						+'<td><img width="100px" src="'+rest.image_url.shop_image1+'"/></td>'
 						+'<td><img width="100px" src="'+rest.image_url.shop_image2+'"/></td>'
-						+'<td>'+rest.latitude+','+rest.longitude+'"/></td>'
+						//緯度経度表示テスト
+						//+'<td>'+rest.latitude+','+rest.longitude+'"/></td>'
 						
 						///// kns <S>
 						+ '<td><div id="map_canvas'+i+'style="width : 100px; height : 100px;"></div></td>'
