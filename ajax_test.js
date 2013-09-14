@@ -12,13 +12,16 @@ $(function(){
 				// それぞれのレストラン情報について繰り返す
 				jQuery.each(data['response']['rest'], function(index){
 					// テーブルにレコード行を追加
-					rest = data['response']['rest'][index];
+					var rest = data['response']['rest'][index];
 					console.log(rest);
+					var ido = rest.latitude;
+					var keido = rest.longitude;
 					$('#results').append(
 						'<tr>'
 						+'<td>'+rest.name+'</td>'
-						+'<td><img width="300px" src="'+rest.image_url.shop_image1+'"/></td>'
-						+'<td><img width="300px" src="'+rest.image_url.shop_image2+'"/></td>'
+						+'<td><img width="100px" src="'+rest.image_url.shop_image1+'"/></td>'
+						+'<td><img width="100px" src="'+rest.image_url.shop_image2+'"/></td>'
+						+'<td>'+rest.latitude+','+rest.longitude+'"/></td>'
 						+'</tr>\n'
 					);
 				});
