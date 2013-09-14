@@ -37,7 +37,7 @@ function on_refresh_click() {
 //引数index:divタグのid
 //　　　latitude:緯度
 //　　　longitude:経度
-function read_lanlog(index, latitude, longitude) {
+function set_lanlog(index, latitude, longitude) {
 
 	var mapdiv = document.getElementById("map_canvas"+i);
 	
@@ -56,6 +56,7 @@ function read_lanlog(index, latitude, longitude) {
  	};
 
 	var map = new google.maps.Map(mapdiv, myOptions);
+	
 	
 	/*配列の数だけ、押しピンマーカーを追加する。*/	
 	
@@ -80,7 +81,7 @@ function read_lanlog(index, latitude, longitude) {
 google.maps.event.addDomListener(
     window,
 	'load',
-	read_lanlog
+	set_lanlog
 );
 
 /*
